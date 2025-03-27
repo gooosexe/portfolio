@@ -1,41 +1,70 @@
 <script>
-	// You can add any logic or data fetching here if needed
-  </script>
-  
-  <main class="max-w-3xl mx-auto p-6">
-	<h1 class="text-4xl font-bold mb-4">about me</h1>
-  
-	<section class="mb-6">
-	  <h2 class="text-2xl font-semibold">hi, i'm [your name]</h2>
-	  <p class="mt-2 text-lg">
-		i’m a passionate developer interested in astrophysics and computer science.
-		my journey began when i was a child, watching documentaries about the universe, and it’s grown into a deep passion for both coding and exploring the wonders of the cosmos.
-	  </p>
-	</section>
-  
-	<section class="mb-6">
-	  <h2 class="text-2xl font-semibold">skills</h2>
-	  <ul class="list-disc pl-6 mt-2">
-		<li>javascript / typescript</li>
-		<li>svelte / sveltekit</li>
-		<li>python (astrophysics simulations)</li>
-		<li>algorithms and data structures</li>
-	  </ul>
-	</section>
-  
-	<section class="mb-6">
-	  <h2 class="text-2xl font-semibold">projects</h2>
-	  <ul class="list-disc pl-6 mt-2">
-		<li><strong>project 1:</strong> a web app built with sveltekit and postgresql for managing tasks.</li>
-		<li><strong>project 2:</strong> astrophysics simulations using python to model star systems and orbits.</li>
-		<li><strong>project 3:</strong> a machine learning project focused on predicting exoplanets based on light curves.</li>
-	  </ul>
-	</section>
-  
-	<section>
-	  <h2 class="text-2xl font-semibold">contact</h2>
-	  <p class="mt-2">
-		you can reach me via email at <a href="mailto:oli.huang@mail.utoronto.ca" class="text-blue-500 hover:underline">oli.huang@mail.utoronto.ca</a>.
-	  </p>
-	</section>
-  </main>
+	import { onMount } from 'svelte';
+
+	onMount(() => {
+		document.body.style.backgroundColor = 'rgb(29,29,36)';
+		document.body.style.color = 'rgb(216,211,179)';
+		document.body.style.fontFamily = 'Cascadia Code, monospace';
+	});
+</script>
+
+<div class="container">
+	<h1>oliver huang.</h1>
+	<p>math and physics student.</p>
+	<nav>
+		<a class="nav-item" href="/about">about</a>
+		<a class="nav-item" href="/projects">projects</a>
+		<a class="nav-item" href="/contact">contact</a>
+	</nav>
+</div>
+
+<style>
+	.container {
+		width: 60%;
+		min-height: 100vh;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: flex-start;
+		margin: 0 auto;
+	}
+
+	h1 {
+		font-size: 3rem;
+	}
+
+	nav {
+		margin-top: 1rem;
+		display: flex;
+		gap: 1.5rem;
+	}
+
+	.nav-item {
+		display: flex;
+		align-items: center;
+		gap: 0.5rem;
+		font-size: 1.2rem;
+		text-decoration: none;
+		color: rgb(216, 211, 179);
+		position: relative;
+		transition: transform 0.3s ease-in-out;
+	}
+
+	.nav-item::before {
+		content: '->';
+		opacity: 1;
+		transform: translateX(0px);
+		transition:
+			opacity 0.3s ease-in-out,
+			transform 0.3s ease-in-out;
+	}
+
+	.nav-item:hover {
+		transform: translateX(3px);
+	}
+
+	.nav-item:hover::before {
+		opacity: 1;
+		transform: rotate(0deg) scale(1) translateX(2px);
+	}
+</style>
