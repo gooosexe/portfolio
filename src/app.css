@@ -23,6 +23,14 @@ ul {
 	margin-top: 0.5rem;
 }
 
+main {
+	margin-left: auto;
+	margin-right: auto;
+	margin-bottom: 2.5rem;
+	max-width: 48rem;
+	padding: 1.5rem;
+}
+
 h1 {
 	font-family: 'Overpass Mono', monospace;
 }

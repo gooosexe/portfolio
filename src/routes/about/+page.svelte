@@ -19,7 +19,7 @@
 
 <Header />
 
-<main class="mx-auto mb-10 max-w-3xl p-6">
+<main>
 	<h1 class="mb-10 text-4xl font-bold">about.</h1>
 
 	<section class="mb-10">

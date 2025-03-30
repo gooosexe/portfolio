@@ -15,7 +15,7 @@
 
 <Header />
 
-<main class="mx-auto mb-10 max-w-3xl p-6">
+<main>
 	<h1 class="mb-10 text-4xl font-bold">contact.</h1>
 
 	<section class="mb-10">
@@ -26,7 +26,7 @@
 	</section>
 
 	<section class="mb-10">
-		<h1 class="mb-6 text-2xl font-bold">some links.</h1>
+		<h2>some links.</h2>
 		<ul>
 			<!-- discord -->
 			<li>
@@ -46,27 +46,27 @@
 	</section>
 
 	<section>
-		<h2 class="text-2xl font-semibold">contact form.</h2>
+		<h2>contact form.</h2>
 		<!-- <form action="https://formspree.io/f/xrbparpp" method="POST" class="mt-4"> -->
-		<form on:submit|preventDefault={onSubmit} class="mt-4">
+		<form on:submit|preventDefault={onSubmit} class="mt-2">
 			<input type="hidden" name="access_key" value="access-key" />
 			<div class="mb-4">
-				<label for="name" class="block text-lg font-medium">name</label>
+				<label for="name" class="block text-lg font-medium tracking-wider">name</label>
 				<input type="text" id="name" name="name" required />
 			</div>
 
 			<div class="mb-4">
-				<label for="email" class="block text-lg font-medium">email</label>
+				<label for="email" class="block text-lg font-medium tracking-wider">email</label>
 				<input type="email" id="email" name="email" required />
 			</div>
 
 			<div class="mb-4">
-				<label for="message" class="block text-lg font-medium">message</label>
+				<label for="message" class="block text-lg font-medium tracking-wider">message</label>
 				<textarea id="message" name="message" rows="5" required></textarea>
 			</div>
 
 			<div class="mb-4">
-				<button type="submit">{status}</button>
+				<button type="submit" class="tracking-wider">{status}</button>
 			</div>
 		</form>
 	</section>
