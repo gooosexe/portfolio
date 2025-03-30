@@ -1,4 +1,4 @@
-<script lang="ts">
+<script context="module" lang="ts">
 	import { handleSubmit } from '$lib/contact'; // adjust the path as needed
 	import Header from '../../components/header.svelte';
 	import { DiscordLogo, LinkedinLogo, Envelope } from 'phosphor-svelte';

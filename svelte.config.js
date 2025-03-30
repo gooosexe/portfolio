@@ -1,10 +1,13 @@
 import { mdsvex } from 'mdsvex';
-import adapter from '@sveltejs/adapter-static';
+import vercel from '@sveltejs/adapter-vercel';
 import { vitePreprocess } from '@sveltejs/vite-plugin-svelte';
 
 const config = {
 	preprocess: [vitePreprocess(), mdsvex()],
-	kit: { adapter: adapter() },
+	kit: { adapter: vercel() },
+	prerender: {
+		entries: ['*'] // Prerender all pages
+	},
 	extensions: ['.svelte', '.svx']
 };
 

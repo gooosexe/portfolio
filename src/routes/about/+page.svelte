@@ -1,4 +1,4 @@
-<script>
+<script context="module" lang="ts">
 	import Header from '../../components/header.svelte';
 
 	let content = {

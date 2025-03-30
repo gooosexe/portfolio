@@ -1,5 +1,3 @@
-// formHandler.ts
-
 export interface FormData {
 	name: string;
 	email: string;
