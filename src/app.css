@@ -4,22 +4,64 @@
 
 :root {
 	--bg-1: #1d1d24;
-	--bg-2: #302f34;
-	--fg-3: #424046;
+	--bg-2: #34343a;
+	--bg-3: #4a4a50;
 	--fg-1: #aeacad;
 	--fg-2: #7b787c;
+	--fg-3: #424046;
 }
 
 body {
 	background-color: var(--bg-1);
 	color: var(--fg-1);
-	font-family: 'Overpass Mono', monospace;
+	font-family: 'Overpass', sans-serif;
+	letter-spacing:;
 	line-height: 2;
+}
+
+ul {
+	margin-top: 0.5rem;
+}
+
+h1 {
+	font-family: 'Overpass Mono', monospace;
+}
+
+h2 {
+	font-family: 'Overpass Mono', monospace;
+	font-size: 30px;
+	font-weight: 600;
+}
+
+section {
+	margin-bottom: 2rem;
 }
 
 p {
 	font-family: 'Overpass', sans-serif;
+	font-size: 14pt;
 	letter-spacing: 0.05em;
+}
+
+a {
+	position: relative;
+	display: inline-block;
+	text-decoration: underline transparent;
+	transition: text-decoration 0.2s ease-in-out;
+}
+
+li {
+	font-size: 14pt;
+	letter-spacing: 0.05em;
+}
+
+.nav-item {
+	font-size: 'overpass mono', monospace;
+}
+
+a:hover {
+	cursor: pointer;
+	text-decoration: underline currentColor;
 }
 
 .split {

@@ -31,6 +31,7 @@
 	.nav-item {
 		display: flex;
 		align-items: center;
+		font-family: 'Overpass Mono', monospace;
 		gap: 0.5rem;
 		font-size: 1.2rem;
 		text-decoration: none;

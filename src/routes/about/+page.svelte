@@ -1,4 +1,6 @@
 <script>
+	import Header from '../../components/header.svelte';
+
 	let content = {
 		languages: {
 			web: ['js', 'ts', 'html', 'css'],
@@ -15,19 +17,21 @@
 	};
 </script>
 
+<Header />
+
 <main class="mx-auto mb-10 max-w-3xl p-6">
-	<h1 class="mb-10 text-4xl font-bold">about</h1>
+	<h1 class="mb-10 text-4xl font-bold">about.</h1>
 
 	<section class="mb-10">
-		<p class="mt-2 leading-loose">
+		<p class="mt-2">
 			hey there, i'm oliver. i’m a passionate student in toronto studying at u of t. i'm interested
-			in astrophysics, game dev, web dev, and design, among other topics.
+			in computational physics, astrophysics, game dev, web dev, and more.
 		</p>
 	</section>
 
-	<section class="mb-6">
-		<h2 class="text-2xl font-semibold">languages</h2>
-		<ul class="mt-2 list-disc pl-6 leading-loose">
+	<section>
+		<h2>languages</h2>
+		<ul>
 			{#each Object.entries(content.languages) as [category, items] (category)}
 				<li>
 					{category} ->
@@ -40,8 +44,10 @@
 				</li>
 			{/each}
 		</ul>
-		<h2 class="mt-6 text-2xl font-semibold">tech</h2>
-		<ul class="mt-2 list-disc pl-6 leading-loose">
+	</section>
+	<section>
+		<h2>tech</h2>
+		<ul>
 			{#each Object.entries(content.tech) as [category, items] (category)}
 				<li>
 					{category} ->
@@ -57,18 +63,19 @@
 	</section>
 
 	<section>
-		<h1 class="text-2xl font-semibold">this site</h1>
-		<a href="https://us.umami.is/share/HwZnyuHQ5Rqz3NWf/refact0r.dev" class="external"
-			>analytics<span class="arrow">/></span></a
-		>
-		<div class="info">
-			stack -> sveltekit <span class="split">/</span> mdsvex
-			<span class="split">/</span> vite <span class="split">/</span> github pages
-		</div>
-		<div class="info">
-			fonts -> overpass mono <span class="split">/</span>
-			<span style="font-family: 'Overpass'" class="tracking-wider">overpass</span>
-		</div>
+		<h2>this site</h2>
+		<ul>
+			<li>
+				stack -> sveltekit <span class="split">/</span> mdsvex
+				<span class="split">/</span> vite <span class="split">/</span> github pages
+			</li>
+			<li>
+				fonts ->
+				<span style="font-family: 'Overpass Mono'" class="tracking-normal">overpass mono </span>
+				<span class="split">/</span>
+				overpass
+			</li>
+		</ul>
 		<div class="info">
 			<div class="colors">
 				<div class="color" style="background: var(--bg-1); border: 2px solid var(--bg-2);">bg</div>
@@ -91,6 +98,7 @@
 		display: inline-block;
 		width: 5rem;
 		text-align: center;
+		font-family: 'overpass mono', monospace;
 		font-size: 1em;
 		border: 2px solid rgba(0, 0, 0, 0);
 	}
