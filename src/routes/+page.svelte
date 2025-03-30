@@ -1,17 +1,7 @@
-<script>
-	import { onMount } from 'svelte';
-
-	onMount(() => {
-		document.body.style.backgroundColor = 'rgb(29,29,36)';
-		document.body.style.color = 'rgb(216,211,179)';
-		document.body.style.fontFamily = 'Cascadia Code, monospace';
-	});
-</script>
-
-<div class="container">
+<div class="container leading-normal">
 	<h1>oliver huang.</h1>
-	<p>math and physics student.</p>
-	<nav>
+	<p>cs and physics student.</p>
+	<nav class="mt-3">
 		<a class="nav-item" href="/about">about</a>
 		<a class="nav-item" href="/projects">projects</a>
 		<a class="nav-item" href="/contact">contact</a>
@@ -34,9 +24,8 @@
 	}
 
 	nav {
-		margin-top: 1rem;
 		display: flex;
-		gap: 1.5rem;
+		gap: 2.5rem;
 	}
 
 	.nav-item {
@@ -45,26 +34,27 @@
 		gap: 0.5rem;
 		font-size: 1.2rem;
 		text-decoration: none;
-		color: rgb(216, 211, 179);
 		position: relative;
 		transition: transform 0.3s ease-in-out;
 	}
 
 	.nav-item::before {
-		content: '->';
-		opacity: 1;
-		transform: translateX(0px);
+		content: '→';
+		position: absolute;
+		left: 0;
+		width: 100%;
+		opacity: 0; /* Initially hidden */
 		transition:
 			opacity 0.3s ease-in-out,
 			transform 0.3s ease-in-out;
 	}
 
 	.nav-item:hover {
-		transform: translateX(3px);
+		transform: translateX(15px);
 	}
 
 	.nav-item:hover::before {
 		opacity: 1;
-		transform: rotate(0deg) scale(1) translateX(2px);
+		transform: translateX(-15px); /* Move the arrow into position */
 	}
 </style>

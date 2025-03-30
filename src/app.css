@@ -1,3 +1,27 @@
 @import 'tailwindcss';
 @plugin '@tailwindcss/forms';
 @plugin '@tailwindcss/typography';
+
+:root {
+	--bg-1: #1d1d24;
+	--bg-2: #302f34;
+	--fg-3: #424046;
+	--fg-1: #aeacad;
+	--fg-2: #7b787c;
+}
+
+body {
+	background-color: var(--bg-1);
+	color: var(--fg-1);
+	font-family: 'Overpass Mono', monospace;
+	line-height: 2;
+}
+
+p {
+	font-family: 'Overpass', sans-serif;
+	letter-spacing: 0.05em;
+}
+
+.split {
+	color: var(--fg-2);
+}
