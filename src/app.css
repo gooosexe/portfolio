@@ -15,8 +15,10 @@ body {
 	background-color: var(--bg-1);
 	color: var(--fg-1);
 	font-family: 'Overpass', sans-serif;
-	letter-spacing:;
 	line-height: 2;
+	font-feature-settings: 'liga' 1; /* Enables standard ligatures */
+	-webkit-font-feature-settings: 'liga' 1; /* For Safari */
+	-moz-font-feature-settings: 'liga' 1; /* For Firefox */
 }
 
 ul {
