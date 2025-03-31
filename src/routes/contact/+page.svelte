@@ -1,15 +1,32 @@
-<script context="module" lang="ts">
-	import { handleSubmit } from '$lib/contact'; // adjust the path as needed
+<script lang="ts">
 	import Header from '../../components/header.svelte';
 	import { DiscordLogo, LinkedinLogo, Envelope } from 'phosphor-svelte';
 
-	let status = 'submit ->';
+	let status = $state('submit ->');
 
-	// The form submission function that calls the imported one
-	const onSubmit = async (event: Event) => {
-		await handleSubmit(event, (newStatus: string) => {
-			status = newStatus;
+	const handleSubmit = async (data: SubmitEvent) => {
+		data.preventDefault();
+
+		status = 'submitting...';
+		const form = data.currentTarget as HTMLFormElement;
+		const formData = new FormData(form);
+		const object = Object.fromEntries(formData);
+		object.access_key = '8cdcaf12-0eab-417e-b881-4f00ef1c45d3';
+		const json = JSON.stringify(object);
+
+		const response = await fetch('https://api.web3forms.com/submit', {
+			method: 'POST',
+			headers: {
+				'Content-Type': 'application/json',
+				Accept: 'application/json'
+			},
+			body: json
 		});
+
+		const result = await response.json();
+		if (result.success) {
+			status = 'message sent!';
+		}
 	};
 </script>
 
@@ -48,7 +65,7 @@
 	<section>
 		<h2>contact form.</h2>
 		<!-- <form action="https://formspree.io/f/xrbparpp" method="POST" class="mt-4"> -->
-		<form on:submit|preventDefault={onSubmit} class="mt-2">
+		<form onsubmit={handleSubmit} class="mt-2">
 			<input type="hidden" name="access_key" value="access-key" />
 			<div class="mb-4">
 				<label for="name" class="block text-lg font-medium tracking-wider">name</label>
