@@ -24,8 +24,8 @@
 
 	<section class="mb-10">
 		<p class="mt-2">
-			hey there, i'm oliver. i’m a passionate student in toronto studying at u of t. i'm interested
-			in computational physics, astrophysics, game dev, web dev, and more.
+			hey there, i'm oliver. i’m a passionate student in toronto studying cs and physics at u of t.
+			i'm interested in computational physics, astrophysics, game dev, web dev, and more.
 		</p>
 	</section>
 
