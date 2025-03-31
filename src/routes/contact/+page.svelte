@@ -96,6 +96,7 @@
 		border-radius: 8px;
 		border: 3px solid var(--bg-2);
 		padding: 0.5rem;
+		letter-spacing: 0.05em;
 		font-size: 1rem;
 		transition: border 0.2s ease;
 	}
@@ -111,6 +112,7 @@
 		border-radius: 8px;
 		border: 3px solid var(--bg-2);
 		padding: 0.5rem;
+		letter-spacing: 0.05em;
 		font-size: 1rem;
 	}
 
