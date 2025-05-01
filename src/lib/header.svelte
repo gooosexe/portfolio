@@ -2,6 +2,7 @@
 	<a href="/"><span class="title">oliver huang</span></a>
 	<nav>
 		<a href="/about" class="nav-item">about</a>
+		<a href="/projects" class="nav-item">projects</a>
 		<a href="/contact" class="nav-item">contact</a>
 	</nav>
 </header>

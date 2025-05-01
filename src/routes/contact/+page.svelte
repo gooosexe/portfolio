@@ -1,5 +1,5 @@
 <script lang="ts">
-	import Header from '../../components/header.svelte';
+	import Header from '$lib/header.svelte';
 	import { DiscordLogo, LinkedinLogo, Envelope } from 'phosphor-svelte';
 
 	let status = $state('submit ->');

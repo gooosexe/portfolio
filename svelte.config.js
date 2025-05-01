@@ -8,7 +8,10 @@ const config = {
 	prerender: {
 		entries: ['*'] // Prerender all pages
 	},
-	extensions: ['.svelte', '.svx']
+	extensions: ['.svelte', '.svx', '.md', '.mdsvex'],
+	alias: {
+		'@content': './src/content'
+	}
 };
 
 export default config;
