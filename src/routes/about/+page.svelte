@@ -20,12 +20,12 @@
 <Header />
 
 <main>
-	<h1 class="mb-10 text-4xl font-bold">about.</h1>
+	<h1 class="mb-10 text-4xl font-bold">about</h1>
 
 	<section class="mb-10">
 		<p class="mt-2">
-			hey there, i'm oliver. i’m a passionate student in toronto studying cs and physics at u of t.
-			i'm interested in computational physics, astrophysics, game dev, web dev, and more.
+			i’m an undergraduate student studying cs and physics at u of t. i'm interested in
+			computational physics, astrophysics, software dev, game dev, and more.
 		</p>
 	</section>
 
@@ -34,7 +34,7 @@
 		<ul>
 			{#each Object.entries(content.languages) as [category, items] (category)}
 				<li>
-					{category} ->
+					{category} →
 					{#each items as item, i (item)}
 						{item}
 						{#if i < items.length - 1}
@@ -50,7 +50,7 @@
 		<ul>
 			{#each Object.entries(content.tech) as [category, items] (category)}
 				<li>
-					{category} ->
+					{category} →
 					{#each items as item, i (item)}
 						{item}
 						{#if i < items.length - 1}
@@ -66,11 +66,11 @@
 		<h2>this site</h2>
 		<ul>
 			<li>
-				stack -> sveltekit <span class="split">/</span> mdsvex
+				stack → sveltekit <span class="split">/</span> mdsvex
 				<span class="split">/</span> vite <span class="split">/</span> github pages
 			</li>
 			<li>
-				fonts ->
+				fonts →
 				<span style="font-family: 'Overpass Mono'" class="tracking-normal">overpass mono </span>
 				<span class="split">/</span>
 				overpass

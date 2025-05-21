@@ -33,7 +33,7 @@
 <Header />
 
 <main>
-	<h1 class="mb-10 text-4xl font-bold">contact.</h1>
+	<h1 class="mb-10 text-4xl font-bold">contact</h1>
 
 	<section class="mb-10">
 		<p class="mt-2 leading-loose">
@@ -43,7 +43,7 @@
 	</section>
 
 	<section class="mb-10">
-		<h2>some links.</h2>
+		<h2>some links</h2>
 		<ul>
 			<!-- discord -->
 			<li>
@@ -63,7 +63,7 @@
 	</section>
 
 	<section>
-		<h2>contact form.</h2>
+		<h2>contact form</h2>
 		<!-- <form action="https://formspree.io/f/xrbparpp" method="POST" class="mt-4"> -->
 		<form onsubmit={handleSubmit} class="mt-2">
 			<input type="hidden" name="access_key" value="access-key" />
