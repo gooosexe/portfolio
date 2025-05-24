@@ -6,9 +6,9 @@
 <Header />
 
 <main>
-	<h1 class="mb-10 text-4xl font-bold">projects.</h1>
+	<h1 class="mb-10 text-4xl font-bold">projects</h1>
 	<section>
-		<p>what the title says.</p>
+		<p>a collection of some of the things i've made.</p>
 	</section>
 
 	<section>
