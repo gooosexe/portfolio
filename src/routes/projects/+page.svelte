@@ -32,7 +32,7 @@
 				subtitle="an nbody simulation, using the barnes-hut algorithm"
 			/>
 			<Card
-				href="https://hack404.vercel.app/"
+				href="https://hack404.dev/"
 				imageSrc="/images/hack404.png"
 				title="hack404"
 				subtitle="website for hack404, a toronto-based hackathon"
