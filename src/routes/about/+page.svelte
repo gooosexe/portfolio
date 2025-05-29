@@ -11,8 +11,10 @@
 		tech: {
 			frontend: ['react', 'next.js', 'sveltekit', 'tailwind'],
 			backend: ['node.js', 'express', 'postgresql', 'mongodb', 'spring'],
-			tools: ['docker', 'postman', 'git', 'figma'],
-			editors: ['zed', 'vscode', 'nvim', 'intellij idea']
+			tools: ['docker', 'postman', 'git', 'pgadmin'],
+			cloud: ['vercel', 'render', 'github pages', 'google cloud'],
+			os: ['macos sequoia', 'xubuntu 24.04', 'debian 11'],
+			editors: ['vscode', 'nvim', 'intellij idea']
 		}
 	};
 </script>

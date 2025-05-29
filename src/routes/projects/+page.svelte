@@ -23,7 +23,7 @@
 				href="https://github.com/gooosexe/corkboard"
 				imageSrc="/images/corkboard.png"
 				title="corkboard"
-				subtitle="a simple message board with an interesting twist"
+				subtitle="a message board with an interesting twist"
 			/>
 			<Card
 				href="https://github.com/gooosexe/nbodysim"

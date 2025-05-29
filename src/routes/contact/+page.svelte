@@ -1,6 +1,6 @@
 <script lang="ts">
 	import Header from '$lib/header.svelte';
-	import { DiscordLogo, LinkedinLogo, Envelope } from 'phosphor-svelte';
+	import { LinkedinLogo, Envelope } from 'phosphor-svelte';
 
 	let status = $state('submit ->');
 
@@ -37,18 +37,13 @@
 
 	<section class="mb-10">
 		<p class="mt-2 leading-loose">
-			feel free to reach out to me. whether it's a question, suggestion, or just to say hi, i'm
-			always happy to chat.
+			feel free to reach out to me.
 		</p>
 	</section>
 
 	<section class="mb-10">
 		<h2>some links</h2>
 		<ul>
-			<!-- discord -->
-			<li>
-				<DiscordLogo class="inline-block h-6 w-6" /> discord -> __gooose
-			</li>
 			<!-- linkedin -->
 			<li>
 				<LinkedinLogo class="inline-block h-6 w-6" /> linkedin ->
@@ -57,7 +52,7 @@
 			<!-- email -->
 			<li>
 				<Envelope class="inline-block h-6 w-6" /> email ->
-				<a href="mailto:ohuang4131@gmail.com">ohuang4131@gmail.com</a>
+				<a href="mailto:ohuang4131@gmail.com">osh3276@gmail.com</a>
 			</li>
 		</ul>
 	</section>
