@@ -37,6 +37,12 @@
 				title="hack404"
 				subtitle="website for hack404, a toronto-based hackathon"
 			/>
+			<Card
+				href="https://paperade.vercel.app/"
+				imageSrc="/images/paperade.png"
+				title="paperade"
+				subtitle="a tool to help you find and read papers efficiently"
+			/>
 		</div>
 	</section>
 </main>

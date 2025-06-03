@@ -3,12 +3,12 @@
 @plugin '@tailwindcss/typography';
 
 :root {
-	--bg-1: #1d1d24;
-	--bg-2: #2b2b33;
-	--bg-3: #3a3a40;
-	--fg-1: #aeacad;
-	--fg-2: #7b787c;
-	--fg-3: #424046;
+	--bg-1: #1d1d1d;
+	--bg-2: #2b2b2b;
+	--bg-3: #3a3a3a;
+	--fg-1: #aeaeae;
+	--fg-2: #787878;
+	--fg-3: #424242;
 }
 
 body {
