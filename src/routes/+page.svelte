@@ -1,33 +1,16 @@
-<div class="container leading-normal">
-	<h1>oliver huang.</h1>
-	<p>cs and physics student.</p>
-	<nav class="mt-3">
-		<a class="nav-item" href="/about">about</a>
-		<a class="nav-item" href="/projects">projects</a>
-		<a class="nav-item" href="/contact">contact</a>
-	</nav>
+<div class="flex justify-center">
+	<div class="flex min-h-dvh w-4/5 flex-col justify-center overflow-hidden leading-normal">
+		<h1 class="text-5xl">oliver huang.</h1>
+		<p>cs and physics student.</p>
+		<nav class="mt-3 flex gap-10">
+			<a class="nav-item" href="/about">about</a>
+			<a class="nav-item" href="/projects">projects</a>
+			<a class="nav-item" href="/contact">contact</a>
+		</nav>
+	</div>
 </div>
 
 <style>
-	.container {
-		width: 60%;
-		min-height: 100vh;
-		display: flex;
-		flex-direction: column;
-		justify-content: center;
-		align-items: flex-start;
-		margin: 0 auto;
-	}
-
-	h1 {
-		font-size: 3rem;
-	}
-
-	nav {
-		display: flex;
-		gap: 2.5rem;
-	}
-
 	.nav-item {
 		display: flex;
 		align-items: center;

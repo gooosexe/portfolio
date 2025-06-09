@@ -20,7 +20,7 @@
 				subtitle="simple simulation of flocking behavior in birds"
 			/>
 			<Card
-				href="https://github.com/gooosexe/corkboard"
+				href="https://corkboard-gray.vercel.app/"
 				imageSrc="/images/corkboard.png"
 				title="corkboard"
 				subtitle="a message board with an interesting twist"

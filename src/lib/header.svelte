@@ -65,4 +65,10 @@
 		cursor: pointer;
 		text-decoration: underline currentColor;
 	}
+
+	@media (max-width: 768px) {
+		.title {
+			display: none;
+		}
+	}
 </style>
