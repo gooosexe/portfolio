@@ -1,6 +1,6 @@
 <script lang="ts">
 	import Header from '$lib/header.svelte';
-	import { LinkedinLogo, Envelope } from 'phosphor-svelte';
+	import { LinkedinLogo, Envelope, GithubLogo } from 'phosphor-svelte';
 
 	let status = $state('submit ->');
 
@@ -36,14 +36,20 @@
 	<h1 class="mb-10 text-4xl font-bold">contact</h1>
 
 	<section class="mb-10">
-		<p class="mt-2 leading-loose">
-			feel free to reach out to me.
-		</p>
+		<p class="mt-2 leading-loose">feel free to reach out to me.</p>
 	</section>
 
 	<section class="mb-10">
 		<h2>some links</h2>
 		<ul>
+			<li>
+				<GithubLogo class="inline-block h-6 w-6" /> github ->
+				<a href="https://github.com/osh3276">osh3276</a>
+			</li>
+			<li>
+				<LinkedinLogo class="inline-block h-6 w-6" /> linkedin ->
+				<a href="https://www.linkedin.com/in/oliver-huang-931947232/">oliver huang</a>
+			</li>
 			<!-- linkedin -->
 			<li>
 				<LinkedinLogo class="inline-block h-6 w-6" /> linkedin ->
