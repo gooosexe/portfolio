@@ -6,7 +6,8 @@
 			web: ['js', 'ts', 'html', 'css'],
 			scripting: ['python', 'bash', 'zsh'],
 			embedded: ['c', 'c++'],
-			other: ['java', 'sql']
+			other: ['java', 'sql'],
+			'coming soon': ['rust']
 		},
 		tech: {
 			frontend: ['react', 'next.js', 'sveltekit', 'tailwind'],

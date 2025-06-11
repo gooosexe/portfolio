@@ -50,11 +50,6 @@
 				<LinkedinLogo class="inline-block h-6 w-6" /> linkedin ->
 				<a href="https://www.linkedin.com/in/oliver-huang-931947232/">oliver huang</a>
 			</li>
-			<!-- linkedin -->
-			<li>
-				<LinkedinLogo class="inline-block h-6 w-6" /> linkedin ->
-				<a href="https://www.linkedin.com/in/oliver-huang-931947232/">oliver huang</a>
-			</li>
 			<!-- email -->
 			<li>
 				<Envelope class="inline-block h-6 w-6" /> email ->
