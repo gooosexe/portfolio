@@ -1,3 +1,7 @@
+<script lang="ts">
+	import '../app.css';
+</script>
+
 <div class="flex justify-center">
 	<div class="flex min-h-dvh w-4/5 flex-col justify-center overflow-hidden leading-normal">
 		<h1 class="text-5xl">oliver huang.</h1>
