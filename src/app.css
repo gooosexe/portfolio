@@ -35,6 +35,8 @@ main {
 
 h1 {
 	font-family: 'Overpass Mono', monospace;
+	font-size: 36px;
+	font-weight: 600;
 }
 
 h2 {

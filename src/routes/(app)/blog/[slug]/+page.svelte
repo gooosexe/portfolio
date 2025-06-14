@@ -1,15 +1,19 @@
 <script lang="ts">
-	import type { PageData } from '$lib/types';
-	
-	export let data: PageData;
+	import type { PostData } from '$lib/types';
+
+	export let data: PostData;
 </script>
 
-<article>
-	<h1>{data.title}</h1>
-	<p>{data.date}</p>
-	{#if data.content}
-		<svelte:component this={data.content} />
-	{:else}
-		<p>Content not available.</p>
-	{/if}
-</article>
+<main>
+	<article>
+		<div class="mb-10 flex flex-col">
+			<h1>{data.title}</h1>
+			<p>{data.date}</p>
+		</div>
+		{#if data.content}
+			<svelte:component this={data.content} />
+		{:else}
+			<p>Content not available.</p>
+		{/if}
+	</article>
+</main>

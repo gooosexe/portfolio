@@ -1,7 +1,8 @@
-import type { ComponentType } from 'svelte';
+import type { Component } from 'svelte';
 
-export interface PageData {
+export interface PostData {
 	title: string;
 	date: string;
-	content?: ComponentType;
+	path: string;
+	content?: Component;
 }

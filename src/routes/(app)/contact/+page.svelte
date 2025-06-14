@@ -30,7 +30,7 @@
 </script>
 
 <main>
-	<h1 class="mb-10 text-4xl font-bold">contact</h1>
+	<h1 class="mb-10">contact</h1>
 
 	<section class="mb-10">
 		<p class="mt-2 leading-loose">feel free to reach out to me.</p>

@@ -3,7 +3,10 @@ export const prerender = false;
 export async function load({ params }) {
 	try {
 		const post = await import(`$posts/${params.slug}.svx`);
-		const { title, date } = post.metadata || {};
+		const { title } = post.metadata || {};
+
+		const date = new Date(post.metadata.date);
+
 		const content = post.default;
 
 		if (!content) {
@@ -12,7 +15,14 @@ export async function load({ params }) {
 
 		return {
 			title: title || 'Untitled',
-			date: date || 'Unknown date',
+			date: date
+				.toLocaleDateString('en-US', {
+					year: 'numeric',
+					month: 'short',
+					day: 'numeric'
+				})
+				.toLowerCase(),
+			path: `/blog/${params.slug}`,
 			content
 		};
 	} catch (error) {

@@ -5,10 +5,11 @@
 </script>
 
 <header>
-	<a href="/"><span class="title">oliver huang</span></a>
+	<a href="/" class="title-link"><span class="title">oliver huang</span></a>
 	<nav>
 		<a href="/about" class="nav-item">about</a>
 		<a href="/projects" class="nav-item">projects</a>
+		<a href="/blog" class="nav-item">blog</a>
 		<a href="/contact" class="nav-item">contact</a>
 	</nav>
 </header>
@@ -25,6 +26,11 @@
 		align-items: center;
 		font-family: 'overpass mono', monospace;
 		transition: background-color 0.3s ease;
+	}
+
+	.title-link {
+		text-decoration: none;
+		color: inherit;
 	}
 
 	nav {
@@ -75,8 +81,12 @@
 	}
 
 	@media (max-width: 768px) {
-		.title {
+		.title-link {
 			display: none;
+		}
+
+		header {
+			justify-content: center;
 		}
 	}
 </style>

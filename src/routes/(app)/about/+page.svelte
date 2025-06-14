@@ -19,7 +19,7 @@
 </script>
 
 <main>
-	<h1 class="mb-10 text-4xl font-bold">about</h1>
+	<h1 class="mb-10">about</h1>
 
 	<section class="mb-10">
 		<p class="mt-2">

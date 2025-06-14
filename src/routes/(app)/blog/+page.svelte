@@ -1,1 +1,19 @@
-<p>hai</p>
+<script lang="ts">
+	import type { PostData } from '$lib/types';
+
+	export let data: { posts: PostData[] };
+</script>
+
+<main>
+	<h1 class="mb-10">blog</h1>
+	{#each data.posts as post (post.title)}
+		<div class="flex justify-between">
+			<a href={`${post.path}`}>
+				<p>
+					{post.title}
+				</p>
+			</a>
+			<p class="font-[var(--fg-2)]">{post.date}</p>
+		</div>
+	{/each}
+</main>

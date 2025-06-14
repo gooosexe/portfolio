@@ -15,7 +15,7 @@ const config = {
 		alias: {
 			'@content': './src/content',
 			'@': './src',
-			$posts: path.resolve('./src/routes/blog/posts')
+			$posts: path.resolve('./src/routes/(app)/blog/posts')
 		}
 	},
 	prerender: {
