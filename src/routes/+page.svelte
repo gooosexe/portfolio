@@ -9,6 +9,7 @@
 		<nav class="mt-3 flex gap-10">
 			<a class="nav-item" href="/about">about</a>
 			<a class="nav-item" href="/projects">projects</a>
+			<a class="nav-item" href="/blog">blog</a>
 			<a class="nav-item" href="/contact">contact</a>
 		</nav>
 	</div>
