@@ -8,7 +8,15 @@ export const load = async () => {
 
 	for (const path in postModules) {
 		const module = postModules[path] as Record<string, PostData>;
-		const date = new Date(module.metadata.date);
+		// Parse date manually to avoid timezone issues
+		const dateStr =
+			typeof module.metadata.date === 'string'
+				? module.metadata.date
+				: (module.metadata.date as Date).toISOString().split('T')[0];
+		const dateParts = dateStr
+			.split('-')
+			.map((x: string, i: number) => (i === 1 ? parseInt(x) - 1 : parseInt(x)));
+		const date = new Date(Date.UTC(dateParts[0], dateParts[1], dateParts[2]));
 		if (module.metadata) {
 			posts.push({
 				title: module.metadata.title,
@@ -16,7 +24,8 @@ export const load = async () => {
 					.toLocaleDateString('en-US', {
 						year: 'numeric',
 						month: 'short',
-						day: 'numeric'
+						day: 'numeric',
+						timeZone: 'UTC'
 					})
 					.toLowerCase(),
 				path: path.replace(/^\.\/posts\/(.*)\.svx$/, '/blog/$1'),

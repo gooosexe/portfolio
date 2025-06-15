@@ -1,11 +1,19 @@
 export const prerender = false;
 
-export async function load({ params }) {
+export async function load({ params }: { params: { slug: string } }) {
 	try {
 		const post = await import(`$posts/${params.slug}.svx`);
 		const { title } = post.metadata || {};
 
-		const date = new Date(post.metadata.date);
+		// Parse date manually to avoid timezone issues
+		const dateStr =
+			typeof post.metadata.date === 'string'
+				? post.metadata.date
+				: (post.metadata.date as Date).toISOString().split('T')[0];
+		const dateParts = dateStr
+			.split('-')
+			.map((x: string, i: number) => (i === 1 ? parseInt(x) - 1 : parseInt(x)));
+		const date = new Date(Date.UTC(dateParts[0], dateParts[1], dateParts[2]));
 
 		const content = post.default;
 
@@ -19,7 +27,8 @@ export async function load({ params }) {
 				.toLocaleDateString('en-US', {
 					year: 'numeric',
 					month: 'short',
-					day: 'numeric'
+					day: 'numeric',
+					timeZone: 'UTC'
 				})
 				.toLowerCase(),
 			path: `/blog/${params.slug}`,
