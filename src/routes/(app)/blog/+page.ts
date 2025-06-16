@@ -34,5 +34,12 @@ export const load = async () => {
 		}
 	}
 
+	// Sort posts by date (newest first)
+	posts.sort((a, b) => {
+		const dateA = new Date(a.date);
+		const dateB = new Date(b.date);
+		return dateB.getTime() - dateA.getTime();
+	});
+
 	return { posts };
 };
