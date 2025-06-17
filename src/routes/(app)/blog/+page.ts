@@ -20,6 +20,7 @@ export const load = async () => {
 		if (module.metadata) {
 			posts.push({
 				title: module.metadata.title,
+				subtitle: module.metadata.subtitle,
 				date: date
 					.toLocaleDateString('en-US', {
 						year: 'numeric',

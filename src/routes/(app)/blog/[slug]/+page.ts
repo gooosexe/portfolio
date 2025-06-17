@@ -3,7 +3,7 @@ export const prerender = false;
 export async function load({ params }: { params: { slug: string } }) {
 	try {
 		const post = await import(`$posts/${params.slug}.svx`);
-		const { title } = post.metadata || {};
+		const { title, subtitle } = post.metadata || {};
 
 		// Parse date manually to avoid timezone issues
 		const dateStr =
@@ -23,6 +23,7 @@ export async function load({ params }: { params: { slug: string } }) {
 
 		return {
 			title: title || 'Untitled',
+			subtitle: subtitle || '',
 			date: date
 				.toLocaleDateString('en-US', {
 					year: 'numeric',

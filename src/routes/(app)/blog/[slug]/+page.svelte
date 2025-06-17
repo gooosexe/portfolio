@@ -8,7 +8,10 @@
 	<article>
 		<div class="mb-10 flex flex-col">
 			<h1>{data.title}</h1>
-			<p>{data.date}</p>
+			<div class="flex justify-between">
+				<p>{data.subtitle}</p>
+				<p>{data.date}</p>
+			</div>
 		</div>
 		{#if data.content}
 			<svelte:component this={data.content} />

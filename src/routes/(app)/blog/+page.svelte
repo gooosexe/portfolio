@@ -10,7 +10,7 @@
 		<div class="flex justify-between">
 			<a href={`${post.path}`}>
 				<p>
-					{post.title}
+					{post.title}{post.subtitle ? `: ${post.subtitle}` : ''}
 				</p>
 			</a>
 			<p class="font-[var(--fg-2)]">{post.date}</p>

@@ -1,5 +1,5 @@
 ---
-title: "surrounded regions [med]"
+title: "surrounded regions [M]"
 subtitle: "daily neetcode #1"
 date: 2025-06-15
 ---
